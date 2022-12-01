@@ -1,0 +1,87 @@
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	background-color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+body {
+	height: 100vh;
+	color: springgreen;
+	font-family: monospace;
+	font-size: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+
+.buttons {
+	display: flex;
+	gap: 50px;
+}
+
+button {
+	width: 100px;
+	height: 60px;
+	cursor: pointer;
+	background-color: navy;
+	border-radius: 20px;
+	border: none;
+	color: inherit;
+	font-size: 20px;
+}
+
+table {
+	border-spacing: 50px 0;
+}
+
+tr {
+	margin-bottom: 30px;
+}
+
+td {
+	/* background-color: darkkhaki; */
+	min-width: 300px;
+	height: 30px;
+	margin: 30px;
+	padding: 10px 15px;
+	cursor: pointer;
+	transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+td:first-child {
+	text-align: right;
+}
+
+td:hover {
+	background-color: #333;
+}
+
+.text-blinked {
+	color: gold;
+	animation: blink 0.9s linear infinite;
+}
+
+@keyframes blink {
+	0% {
+		opacity: 0.2;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0.2;
+	}
+}
+
+.text-hidden {
+	opacity: 0;
+	cursor: default;
+	pointer-events: none;
+	/* color: red !important; */
+}
