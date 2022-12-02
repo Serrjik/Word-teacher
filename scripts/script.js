@@ -113,6 +113,30 @@ const getWordTable = amount => {
 					state.isEnglishWordChosen = false
 					state.numEnglishWord = null
 					state.numRussianWord = null
+
+					// Количество скрытых английских слов.
+					const hiddenEngWords =
+						+document.getElementsByClassName('text-hidden').length /
+						2
+					// Если скрыли все слова:
+					if (hiddenEngWords === +amount) {
+						document.body.innerText = 'Well done!'
+						const buttonElement = document.createElement('button')
+						buttonElement.classList.add('button--new')
+
+						const captionElement = document.createElement('span')
+						buttonElement.append(captionElement)
+						captionElement.textContent = 'Train again'
+						const effectElement = document.createElement('div')
+						buttonElement.append(effectElement)
+
+						document.body.append(buttonElement)
+
+						// Выбор следующей тренировки.
+						document.body
+							.getElementsByTagName('button')[0]
+							.addEventListener('click', getWordCount)
+					}
 				}
 			} else if (event.target.hasAttribute('data-num-eng')) {
 				state.isEnglishWordChosen = false
