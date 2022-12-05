@@ -9,7 +9,7 @@ state.numRussianWord = null
 // Функция возвращает количество слов для тренировки.
 const getWordCount = () => {
 	document.body.innerHTML =
-		'<span>Choose the number of words to practice:</span>'
+		'<span style="padding: 20px;">Choose the number of words to practice:</span>'
 
 	const divElement = document.createElement('div')
 	divElement.classList.add('buttons')
