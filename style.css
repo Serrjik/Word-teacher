@@ -8,6 +8,9 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	text-align: center;
+	margin: 0;
+	padding: 0;
 }
 
 body {
@@ -28,7 +31,14 @@ body {
 
 .buttons {
 	display: flex;
+	flex-direction: column;
 	gap: 50px;
+}
+
+@media (min-width: 650px) {
+	.buttons {
+		flex-direction: row;
+	}
 }
 
 button {
@@ -83,10 +93,8 @@ button div {
 	z-index: 5;
 	width: 100%;
 	height: 100%;
-	/* opacity: 1; */
 
 	background: linear-gradient(to right, #fb3ebc, #b51cca, #3226d6);
-	/* border-radius: 10px; */
 
 	transition: clip-path 0.6s ease;
 	clip-path: circle(0% at 50% 50%);
@@ -103,20 +111,35 @@ button:focus-within div {
 }
 
 table {
-	border-spacing: 50px 0;
-	font-size: 20px;
+	border-spacing: 30px 0;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+}
+
+@media (min-width: 550px) {
+	.buttons {
+		border-spacing: 50px 0;
+		font-size: 20px;
+	}
 }
 
 tr {
-	margin-bottom: 30px;
+	margin-bottom: 20px;
+}
+
+@media (min-width: 550px) {
+	tr {
+		margin-bottom: 30px;
+	}
 }
 
 td {
 	/* background-color: darkkhaki; */
-	min-width: 300px;
-	height: 30px;
-	margin: 30px;
-	padding: 10px 15px;
+	min-width: 230px;
+	height: 24px;
+	margin: 20px;
+	padding: 5px 10px;
 	cursor: pointer;
 	transition: background-color 0.3s ease, opacity 0.3s ease;
 }
@@ -125,8 +148,21 @@ td:first-child {
 	text-align: right;
 }
 
+td:nth-child(2) {
+	text-align: left;
+}
+
 td:hover {
 	background-color: #333;
+}
+
+@media (min-width: 550px) {
+	td {
+		min-width: 300px;
+		height: 30px;
+		margin: 30px;
+		padding: 10px 15px;
+	}
 }
 
 .text-blinked {
