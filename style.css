@@ -124,21 +124,10 @@ table {
 	}
 }
 
-tr {
-	margin-bottom: 20px;
-}
-
-@media (min-width: 550px) {
-	tr {
-		margin-bottom: 30px;
-	}
-}
-
 td {
 	/* background-color: darkkhaki; */
-	min-width: 230px;
+	width: 260px;
 	height: 24px;
-	margin: 20px;
 	padding: 5px 10px;
 	cursor: pointer;
 	transition: background-color 0.3s ease, opacity 0.3s ease;
@@ -160,7 +149,6 @@ td:hover {
 	td {
 		min-width: 300px;
 		height: 30px;
-		margin: 30px;
 		padding: 10px 15px;
 	}
 }
@@ -186,5 +174,4 @@ td:hover {
 	opacity: 0;
 	cursor: default;
 	pointer-events: none;
-	/* color: red !important; */
 }
