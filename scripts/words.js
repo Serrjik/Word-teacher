@@ -67,4 +67,5 @@ words = [
 	['leash', 'поводок'],
 	['garment', 'одежда'],
 	['excerpt', 'excerpt'],
+	['neckline', 'декольте'],
 ]
