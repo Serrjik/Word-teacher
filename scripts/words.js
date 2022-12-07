@@ -66,4 +66,5 @@ words = [
 	['retrieval', 'восстановление'],
 	['leash', 'поводок'],
 	['garment', 'одежда'],
+	['excerpt', 'excerpt'],
 ]
