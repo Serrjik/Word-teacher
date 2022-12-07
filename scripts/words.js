@@ -68,4 +68,8 @@ words = [
 	['garment', 'одежда'],
 	['excerpt', 'excerpt'],
 	['neckline', 'декольте'],
+	['hassles', 'неприятности'],
+	['carry out', 'выполнять'],
+	['consistent', 'последовательный'],
+	['sealed', 'запечатанный'],
 ]
