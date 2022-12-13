@@ -103,6 +103,7 @@ const getWordTable = amount => {
 			} else if (event.target.hasAttribute('data-num-rus')) {
 				state.numRussianWord = event.target.dataset.numRus
 
+				// Если кликнули по правильному переводу выделенного английского слова:
 				if (state.numEnglishWord === state.numRussianWord) {
 					// console.log('=')
 					const engWordItem = document.querySelector('.text-blinked')
@@ -142,6 +143,14 @@ const getWordTable = amount => {
 							.getElementsByTagName('button')[0]
 							.addEventListener('click', getWordCount)
 					}
+				} else {
+					// Если кликнули по неправильному переводу выделенного английского слова:
+					const engWordItem = document.querySelector('.text-blinked')
+					engWordItem.classList.remove('text-blinked')
+
+					state.isEnglishWordChosen = false
+					state.numEnglishWord = null
+					state.numRussianWord = null
 				}
 			} else if (event.target.hasAttribute('data-num-eng')) {
 				state.isEnglishWordChosen = false
