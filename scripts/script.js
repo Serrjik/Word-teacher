@@ -76,13 +76,18 @@ const getWordTable = amount => {
 	tableElement.addEventListener('click', event => {
 		if (event.target.tagName === 'TD') {
 			// console.log('event.target: ', event)
+			// Если кликнули по английскому слову и уже есть выбранное английское слово:
 			if (
 				state.isEnglishWordChosen === true &&
 				event.target.hasAttribute('data-num-eng')
 			) {
 				const engWordItem = document.querySelector('.text-blinked')
-				engWordItem.classList.remove('text-blinked')
-				state.isEnglishWordChosen = false
+
+				// Если кликнули именно по выбранному английскому слову:
+				if (engWordItem === event.target) {
+					engWordItem.classList.remove('text-blinked')
+					state.isEnglishWordChosen = false
+				}
 
 				return
 			}
