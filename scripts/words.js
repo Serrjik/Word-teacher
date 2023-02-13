@@ -317,4 +317,6 @@ words = [
 	['diligence', 'усердие'],
 	['enrich', 'обогащать'],
 	['slumber', 'сон, дремота'],
+	['bang to rights', 'взять с поличным'],
+	['preoccupation', 'озабоченность'],
 ]
