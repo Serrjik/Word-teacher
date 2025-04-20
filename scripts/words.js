@@ -598,4 +598,5 @@ words = [
 	['sting', 'укус'],
 	['gorge', 'ущелье'],
 	['immensely', 'безмерно'],
+	['reciprocal', 'взаимный'],
 ]
