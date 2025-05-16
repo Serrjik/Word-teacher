@@ -599,4 +599,5 @@ words = [
 	['gorge', 'ущелье'],
 	['immensely', 'безмерно'],
 	['reciprocal', 'взаимный'],
+	['reassuringly', 'обнадеживающе'],
 ]
