@@ -600,4 +600,5 @@ words = [
 	['immensely', 'безмерно'],
 	['reciprocal', 'взаимный'],
 	['reassuringly', 'обнадеживающе'],
+	['sheer', 'явный'],
 ]
