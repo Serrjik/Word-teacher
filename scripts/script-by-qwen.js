@@ -1,4 +1,3 @@
-scripts/script.js
 const table = document.querySelector('table')
 
 const state = {
